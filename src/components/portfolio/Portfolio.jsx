@@ -13,7 +13,7 @@ const Portfolio = () => {
                 <p className="subtitle">Bonjour, je m'appelle Isaure Blaffa</p>
                 <p>
                 Je suis UX Designer junior, et je travaille au plus
-                près des utilisateurs pour créer avec vous lesmeilleurs produits digitaux.
+                près des utilisateurs pour créer avec vous les meilleurs produits digitaux.
                 </p>
             </div>
             <Container className="projects" fluid={true}>
