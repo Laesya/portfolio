@@ -7,6 +7,7 @@ import HandiPaca from './components/portfolio/HandiPaca';
 import Wavager from './components/portfolio/Wavager';
 import Surveys from "./components/portfolio/Surveys";
 import Avocat from './components/portfolio/Avocat';
+import Legal from './components/layout/Legal';
 const Router = () => {
     return (
         <Switch>
@@ -17,6 +18,7 @@ const Router = () => {
             <Route exact path="/wavager" component={Wavager}/>
             <Route exact path="/surveys" component={Surveys}/>
             <Route exact path="/avocat" component={Avocat}/>
+            <Route exact path="/legal" component={Legal}/>
         </Switch>
     )
 }

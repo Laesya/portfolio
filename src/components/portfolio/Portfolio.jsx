@@ -32,22 +32,26 @@ const Portfolio = () => {
             <Container className="projects" fluid={true}>
                 <Row xs={1} md={2}>
                     <Col>
-                    <Link className="nav-link" to="/handipaca"><img src={handipaca} alt=""/></Link>
+                    <Link className="nav-link" to="/handipaca" className="computer"><img src={handipaca} alt=""/></Link>
+                    <Link className="nav-link" to="/handipaca" className="mobile">En savoir plus</Link>
                         <p>Accessibilité Handicap App</p>
                         <p className="subtitle">Chef de projet - Branding</p>
                     </Col>
                     <Col>
-                        <Link className="nav-link" to="/wavager"><img src={wavager} alt=""/></Link>
+                        <Link className="nav-link" to="/wavager" className="computer"><img src={wavager} alt=""/></Link>
+                        <Link className="nav-link" to="/wavager" className="mobile">En savoir plus</Link>
                         <p>Accessibilité en Voyage  App</p>
                         <p className="subtitle">Développement - UI Design</p>
                     </Col>
                     <Col>
-                    <Link className="nav-link" to="/surveys"><img src={surveys} alt=""/></Link>
+                    <Link className="nav-link" to="/surveys" className="computer"><img src={surveys} alt=""/></Link>
+                    <Link className="nav-link" to="/surveys" className="mobile">En savoir plus</Link>
                         <p>Wild Survey App</p>
                         <p className="subtitle">Développement - UI Design - UX Design</p>
                     </Col>
                     <Col>
-                    <Link className="nav-link" to="/avocat"><img src={avocat} alt=""/></Link>
+                    <Link className="nav-link" to="/avocat" className="computer"><img src={avocat} alt=""/></Link>
+                    <Link className="nav-link" to="/avocat" className="mobile">En savoir plus</Link>
                         <p>Avocat Wordpress App</p>
                         <p className="subtitle">Développement - UI Design</p>
                     </Col>
