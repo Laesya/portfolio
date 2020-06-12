@@ -1,23 +1,36 @@
 import React from 'react';
-import { Container, Col, Row } from 'reactstrap';
+import { Container } from 'reactstrap';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row'
 import {Link} from 'react-router-dom'
 import avocat from "../../assets/portfolio/avocat.png";
 import handipaca from "../../assets/portfolio/HandiPaca.png";
 import surveys from "../../assets/portfolio/survey.png";
 import wavager from "../../assets/portfolio/wavager.png";
-
+import portrait from '../../assets/about/portrait.png';
 const Portfolio = () => {
     return (
         <Container className="portfolio" fluid={true}>
-            <div className="title">
-                <p className="subtitle">Bonjour, je m'appelle Isaure Blaffa</p>
-                <p>
-                Je suis UX Designer junior, et je travaille au plus
+            <Container fluid={true}>
+                <Row className="header">
+                    <Col className="presentation">
+                        <p className="name">Je suis Isaure</p>
+                        <p className="texte">Je suis UX Designer junior, et je travaille au plus
                 près des utilisateurs pour créer avec vous les meilleurs produits digitaux.
-                </p>
-            </div>
+                        </p>
+                        <p>
+                        Je suis une grande adepte des films, des séries et des jeux vidéos, et  
+                        j’occupe une part de mon temps libre à la conception d’une suite de 
+                        romans, dont le thème oscille entre fantaisie et monde médiéval. 
+                        </p>
+                    </Col>
+                    <Col className="portrait">
+                        <img src={portrait} alt="carte mentale personnelle" />
+                    </Col>
+                </Row>
+            </Container>
             <Container className="projects" fluid={true}>
-                <Row>
+                <Row xs={1} md={2}>
                     <Col>
                     <Link className="nav-link" to="/handipaca"><img src={handipaca} alt=""/></Link>
                         <p>Accessibilité Handicap App</p>
@@ -28,8 +41,6 @@ const Portfolio = () => {
                         <p>Accessibilité en Voyage  App</p>
                         <p className="subtitle">Développement - UI Design</p>
                     </Col>
-                </Row>
-                <Row>
                     <Col>
                     <Link className="nav-link" to="/surveys"><img src={surveys} alt=""/></Link>
                         <p>Wild Survey App</p>
@@ -40,6 +51,9 @@ const Portfolio = () => {
                         <p>Avocat Wordpress App</p>
                         <p className="subtitle">Développement - UI Design</p>
                     </Col>
+                </Row>
+                <Row xs={1} md={2}>
+                    
                 </Row>
             </Container>
         </Container>

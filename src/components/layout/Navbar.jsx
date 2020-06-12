@@ -1,20 +1,24 @@
-import React from 'react'
-import { Nav, Container } from 'reactstrap';
-import {Link} from 'react-router-dom'
+import React from 'react';
+import { Navbar , Nav} from 'react-bootstrap';
 import '../../style.scss'
 
 
-const Navbar = () => {
+const Navbar1 = () => {
     return (
-        <Container className="navbar-style" id="top" fluid="true">
-           <Nav className="nav">      
-                <Link className="nav-link" to="/">Accueil</Link>
-                <Link className="nav-link" to="/alternance">L'alternance</Link> 
-                <Link className="nav-link" to="/about">A propos</Link>
-                <a className="nav-link" href="#contact">Contact</a>
+          <Navbar collapseOnSelect expand="lg" className="navbar-style justify-content-end" >
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="mr-auto nav navbar-style">
+              <Nav.Link href="/">Accueil</Nav.Link>
+              <Nav.Link href="/alternance">Alternance</Nav.Link>
+              <Nav.Link href="/about">About</Nav.Link>
+              <Nav.Link href="#contact">Contact</Nav.Link>
             </Nav>
-        </Container>
+          </Navbar.Collapse>
+        </Navbar>
     )
 }
 
-export default Navbar;
+export default Navbar1;
+
+

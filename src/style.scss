@@ -40,18 +40,22 @@ button {
         top: 0;
         left: 0;
         right: 0;
-        height:80px;
+        height:auto;
         margin: auto;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding: 1.5rem 2rem !important;
-        flex-wrap: nowrap !important;
-        justify-content: flex-end;
         .icons {
             margin-bottom: 5px;
             margin-right: 5px;
         }
        
+    }
+    button {
+        cursor: pointer !important;
+    }
+    button:focus {
+        outline: none !important;
+    }
+    bouton:active {
+        outline: none !important;
     }
     
     .nav-link {
@@ -122,19 +126,32 @@ button {
 
 /*PORTFOLIO*/
 .portfolio {
-    .title { 
-        display: flex;
-        justify-content: flex-start;
-        margin: 120px !important;
-        flex-direction: column;
-        .subtitle {
-            font-size : 20px;
-            text-align: left;
-            margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    .header {
+        margin-top: 80px;
+        margin-bottom: 80px;
+        .presentation {
+            margin-left: 120px !important;
+            .name {
+                font-size: 64px;
+                opacity: 1;
+                text-align: initial;
+            }
+            p {
+                font-size: 20px;
+                opacity: 0.6;
+                text-align: justify;
+            }
         }
-        p {
-            font-size: 64px;
-            text-align: left;
+        .portrait {
+            display: flex;
+            justify-content: center;
+            img {
+                height: 300px;
+                width: auto;
+            }
         }
     }
     .projects {
@@ -142,6 +159,9 @@ button {
         justify-content: space-evenly;
         flex-direction: column;
         flex-wrap: wrap;
+        .row {
+            margin:auto;
+        }
         img {
             margin: auto;
             cursor: pointer;
@@ -260,7 +280,7 @@ button {
             margin-top: 120px;
         }
         .nomargin {
-            margin-top: 0;
+            margin-top: 120px;
         }
         p {
             text-align: justify;
@@ -299,11 +319,36 @@ button {
         justify-content: center;
         margin-top: 120px;
     }
+    .recommandations {
+        h2 {
+            margin-bottom: 60px;
+        }
+        .accordion>.card>.card-header {
+            color: #ffffff !important;
+            background-color: $colorSpecial;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            border: none !important;
+        }
+        .accordion>.card {
+            margin-bottom: 20px;
+            border-color: #A3D6CC;
+        }
+        .card-body {
+            text-align: center;
+        }
+        .card-body>span {
+            color: $colorSpecial !important;
+            font-weight: bold;
+        }
+    }
     .CV {
         text-align: left;
         margin-left: 10vw;
         h2 {
             font-size: 36px;
+            margin-top: 80px;
         }
         .poste {
             color: $colorSpecial !important;
@@ -334,3 +379,65 @@ button {
     }
 }
 /*ABOUT*/
+
+@media screen and (max-width: 1120px)
+{
+    .alternance {
+        .presentation {
+            margin: 0 !important;
+        }
+        .oc {
+            display: none;
+        }
+    }
+    .about {
+        .presentation {
+            margin: 0 !important;
+            .name {
+                font-size: 55px;
+            }
+        }
+        .oc {
+            display: none;
+        }
+    }
+    .portfolio {
+        .header {
+            .presentation {
+                margin: 0 !important;
+                .name {
+                    font-size: 55px;
+                }
+            }
+            .portrait {
+                display: none;
+            }
+        }
+    }
+}
+@media screen and (max-width: 420px)
+{
+    .portfolio {
+        .header {
+            .presentation {
+                .name {
+                    font-size: 50px;
+                }
+            }
+        }
+    }
+    .about {
+        .presentation {
+            .name {
+                font-size: 50px;
+            }
+        }
+    }
+    .alternance {
+        .presentation {
+            .title {
+                font-size: 50px;
+            }
+        }
+    }
+}
