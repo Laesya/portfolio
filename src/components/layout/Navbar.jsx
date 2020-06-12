@@ -1,5 +1,6 @@
 import React from 'react';
 import { Navbar , Nav} from 'react-bootstrap';
+import { Link } from "react-router-dom";
 import '../../style.scss'
 
 
@@ -9,9 +10,9 @@ const Navbar1 = () => {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto nav navbar-style">
-              <Nav.Link href="/">Accueil</Nav.Link>
-              <Nav.Link href="/alternance">Alternance</Nav.Link>
-              <Nav.Link href="/about">About</Nav.Link>
+              <Link className="nav-link" to="/">Accueil</Link>
+              <Link className="nav-link" to="/alternance">Alternance</Link>
+              <Link className="nav-link" to="/about">About</Link>
               <Nav.Link href="#contact">Contact</Nav.Link>
             </Nav>
           </Navbar.Collapse>
