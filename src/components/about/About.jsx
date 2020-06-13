@@ -15,11 +15,6 @@ const About = () => {
                         <p>
                         J’aimerais me spécialiser en UX Research, peut être également en UX Writing, car cela me permettrait de relier mon besoin de compréhension ainsi que mon amour de l’écriture et d’être pleinement épanouie. C’est pourquoi je cherche activement un emploi dans lequel je pourrais monter en compétence sur ces deux domaines, tout en étant accompagnée grâce à l’alternance.
                         </p>
-                        <p>
-                        Je suis une grande adepte des films, des séries et des jeux vidéos, et  
-                        j’occupe une part de mon temps libre à la conception d’une suite de 
-                        romans, dont le thème oscille entre fantaisie et monde médiéval. 
-                        </p>
                     </Col>     
                 </Row>
             </Container>
