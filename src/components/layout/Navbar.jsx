@@ -12,7 +12,7 @@ const Navbar1 = () => {
             <Nav className="mr-auto nav navbar-style">
               <Link className="nav-link" to="/">Accueil</Link>
               <Link className="nav-link" to="/alternance">Alternance</Link>
-              <Link className="nav-link" to="/about">About</Link>
+              <Link className="nav-link" to="/about">&Agrave; propos</Link>
               <Nav.Link href="#contact">Contact</Nav.Link>
             </Nav>
           </Navbar.Collapse>
