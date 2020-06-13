@@ -9,7 +9,7 @@ const Alternance = () => {
                 <Row>
                     <Col className="presentation">
                         <h1 className="title">L'alternance</h1>
-                        <p>Je recherche activement l'entreprise auprès qui je travaillerais dans le cadre de mon contrat de professionnalisation !</p>
+                        <p>Je recherche activement l'entreprise avec qui je travaillerais dans le cadre d'un contrat de professionnalisation !</p>
                         <p>
                         Vous trouverez ici des informations sur le fonctionnement de l'alternance chez Openclassrooms, mais si vous avez la moindre question supplémentaire, vous pouvez me contacter ou contacter directement l'école à cette adresse: <span>corporate@openclassrooms.com</span>
                         </p>
