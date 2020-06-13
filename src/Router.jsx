@@ -7,6 +7,7 @@ import HandiPaca from './components/portfolio/HandiPaca';
 import Wavager from './components/portfolio/Wavager';
 import Surveys from "./components/portfolio/Surveys";
 import Avocat from './components/portfolio/Avocat';
+import Coffee from './components/portfolio/Coffee';
 import Legal from './components/layout/Legal';
 const Router = () => {
     return (
@@ -18,6 +19,7 @@ const Router = () => {
             <Route exact path="/wavager" component={Wavager}/>
             <Route exact path="/surveys" component={Surveys}/>
             <Route exact path="/avocat" component={Avocat}/>
+            <Route exact path="/coffee" component={Coffee}/>
             <Route exact path="/legal" component={Legal}/>
         </Switch>
     )

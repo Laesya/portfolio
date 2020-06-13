@@ -20,7 +20,8 @@ const About = () => {
             </Container>
             <Container className="recommandations">
             <h2>Ils l'ont dit : </h2>
-                <Accordion defaultActiveKey="0">
+            <p>Un témoigagne vous intéresse ? Cliquez dessus pour en lire plus !</p>
+                <Accordion>
                     <Card>
                         <Accordion.Toggle as={Card.Header} eventKey="0">
                         Thibaut Marlien, Campus Manager chez Wild Code School
